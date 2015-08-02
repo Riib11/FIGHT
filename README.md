@@ -1,4 +1,4 @@
-# Fancy-Isometric-Gerrymandering-Hasty-Toss-Up-FIGHT-
+# Fancy-Isometric-Gerrymandering-Hasty-Toss-Up: FIGHT
 ## F.I.G.H.T.
 ### Goal:
   What we want to do with this plugin is create classes that basically have superpowers. There will be a large variety if choices in classes, but they will mainly be either magic or nonmagic. Nonmagic classes will still have abilities that use mana/stanima, but they won't be "spells", just abilities. Magic classes will have spells.
