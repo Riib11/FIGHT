@@ -12,7 +12,7 @@
 			<attribute name="javadoc_location" value="https://hub.spigotmc.org/javadocs/bukkit/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/Henry/git/RiibFightFork/Resources/PacketListenerApi_v2.5.2.jar" sourcepath="/Users/Henry/git/RiibFightFork/Resources/PacketListenerApi_v2.5.2.jar"/>
-	<classpathentry kind="lib" path="/Users/Henry/git/RiibFightFork/Resources/NPCLib.jar"/>
+	<classpathentry kind="lib" path="/Users/Henry/git/FIGHT/Resources/PacketListenerApi_v2.5.2.jar" sourcepath="/Users/Henry/git/RiibFightFork/Resources/PacketListenerApi_v2.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Henry/git/FIGHT/Resources/NPCLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
