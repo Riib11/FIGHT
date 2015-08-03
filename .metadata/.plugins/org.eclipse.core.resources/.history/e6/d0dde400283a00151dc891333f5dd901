@@ -8,8 +8,6 @@ import com.ngse.fight.FIGHT;
 
 public class Energy {
 
-	// TODO: Improve ascetic quality of energy display
-
 	private int energy;
 
 	private static String fillChar = " ";
@@ -48,7 +46,7 @@ public class Energy {
 	}
 
 	public static String convertToString(Energy e) {
-		return convertToString(e.getEnergy());
+		convertToString(e.getEnergy());
 	}
 
 	public static String convertToString(int a) {

@@ -8,8 +8,6 @@ import com.ngse.fight.FIGHT;
 
 public class Energy {
 
-	// TODO: Improve ascetic quality of energy display
-
 	private int energy;
 
 	private static String fillChar = " ";

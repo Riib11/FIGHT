@@ -1,13 +1,14 @@
 package com.ngse.utilities;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Effect;
 import org.bukkit.entity.Player;
 import org.bukkit.metadata.FixedMetadataValue;
 
 import com.ngse.fight.FIGHT;
 
 public class Energy {
-
+	
 	// TODO: Improve ascetic quality of energy display
 
 	private int energy;

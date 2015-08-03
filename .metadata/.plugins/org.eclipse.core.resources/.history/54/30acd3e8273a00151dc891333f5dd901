@@ -8,8 +8,6 @@ import com.ngse.fight.FIGHT;
 
 public class Energy {
 
-	// TODO: Improve ascetic quality of energy display
-
 	private int energy;
 
 	private static String fillChar = " ";
@@ -48,7 +46,13 @@ public class Energy {
 	}
 
 	public static String convertToString(Energy e) {
-		return convertToString(e.getEnergy());
+		String str = " ";
+		if (e.getEnergy() > 0) {
+			for (int i = 0; i < e.getEnergy(); i++) {
+				str += "• ";
+			}
+		}
+		return str;
 	}
 
 	public static String convertToString(int a) {
@@ -83,9 +87,9 @@ public class Energy {
 	}
 
 	public static void updateEnergyDisplay(Player p, ChatColor c) {
-		// p.setTotalExperience(get(p) / 5);
-		// p.sendMessage(String.valueOf(p.getTotalExperience()) + " : "
-		// + String.valueOf(get(p)));
+		p.setTotalExperience(get(p) / 5);
+		p.sendMessage(String.valueOf(p.getTotalExperience()) + " : "
+				+ String.valueOf(get(p)));
 		Title title = new Title(" ", convertToString(get(p)), 0, 15, 0);
 		title.setSubtitleColor(c);
 		title.send(p);
