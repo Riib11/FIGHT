@@ -10,6 +10,10 @@ public class Energy {
 
 	private int energy;
 
+	private static String fillChar = " ";
+	private static String frontChar = "[";
+	private static String backChar = "]";
+
 	public int getEnergy() {
 		return energy;
 	}
@@ -52,11 +56,12 @@ public class Energy {
 	}
 
 	public static String convertToString(int a) {
-		String str = " ";
+		String str = frontChar;
 		if (a > 0) {
 			for (int i = 0; i < a; i++) {
-				str += "•";
+				str += fillChar;
 			}
+			str += backChar;
 		}
 		return str;
 	}
@@ -82,7 +87,9 @@ public class Energy {
 	}
 
 	public static void updateEnergyDisplay(Player p, ChatColor c) {
-		p.setTotalExperience(get(p));
+		p.setTotalExperience(get(p) / 5);
+		p.sendMessage(String.valueOf(p.getTotalExperience()) + " : "
+				+ String.valueOf(get(p)));
 		Title title = new Title(" ", convertToString(get(p)), 0, 15, 0);
 		title.setSubtitleColor(c);
 		title.send(p);
