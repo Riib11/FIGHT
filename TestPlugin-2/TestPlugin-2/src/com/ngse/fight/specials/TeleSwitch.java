@@ -26,7 +26,7 @@ public class TeleSwitch extends Ability {
 
 	@Override
 	public void effect(Player user) {
-		// nothing, needs targetF
+		// nothing, needs target
 	}
 
 	@Override

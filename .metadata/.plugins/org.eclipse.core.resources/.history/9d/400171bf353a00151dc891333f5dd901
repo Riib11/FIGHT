@@ -1,0 +1,21 @@
+package com.ngse.utilities;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Time {
+
+	public static void wait(double seconds) {
+		Timer a = new Timer(0, new a());
+	}
+
+}
+
+class a implements ActionListener {
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+
+	}
+
+}

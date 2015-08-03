@@ -28,7 +28,9 @@ public class DarkLeap extends PassiveAbility {
 			p.getWorld().playEffect(p.getLocation().add(0, 1, 0),
 					Effect.MOBSPAWNER_FLAMES, 7);
 		}
-		p.setAllowFlight(true);
+		if (!p.getAllowFlight()) {
+			p.setAllowFlight(true);
+		}
 	}
 
 	@Override

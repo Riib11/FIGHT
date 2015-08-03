@@ -1,0 +1,32 @@
+package com.ngse.utilities;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Timer;
+
+public class Time {
+
+	public static long counter;
+
+	public static void wait(double seconds) {
+		Timer a = new Timer(0, new a());
+		a.setDelay(100);
+		a.start();
+		counter = 0;
+		while (counter < seconds * 10) {
+			// wait
+			
+		}
+		a.stop();
+	}
+}
+
+class a implements ActionListener {
+
+	// goes off ever 100 ms (1/10 second
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+
+	}
+}

@@ -1,0 +1,11 @@
+package com.ngse.utilities;
+
+import javax.swing.Timer;
+
+public class Time {
+
+	public static void wait(double seconds) {
+		Timer t = new Timer(new ActionListener);
+	}
+
+}

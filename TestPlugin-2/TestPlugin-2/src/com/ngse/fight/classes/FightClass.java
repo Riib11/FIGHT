@@ -19,6 +19,7 @@ import com.ngse.fight.classes.fighters.Ninja;
 import com.ngse.fight.classes.fighters.PsychoKiller;
 import com.ngse.fight.classes.mages.Alchemist;
 import com.ngse.fight.classes.mages.Illusionist;
+import com.ngse.fight.classes.mages.Necromancer;
 import com.ngse.fight.classes.mages.Pyromancer;
 import com.ngse.fight.classes.mages.Shadow;
 import com.ngse.fight.classes.mages.Teleporter;
@@ -37,6 +38,7 @@ public abstract class FightClass {
 		Ninja nin = new Ninja();
 		Lumberjack lum = new Lumberjack();
 		Illusionist ill = new Illusionist();
+		Necromancer nex = new Necromancer();
 	}
 
 	public abstract ArrayList<ItemStack> getItems();

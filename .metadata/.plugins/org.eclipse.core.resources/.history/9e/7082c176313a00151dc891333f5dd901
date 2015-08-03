@@ -1,0 +1,14 @@
+package com.ngse.fight.specials;
+
+import com.ngse.fight.classes.BlockTargettingAbility;
+
+public class RaiseDead extends BlockTargettingAbility {
+
+	public RaiseDead() {
+		super("Raise Dead", 20, "raidea");
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+}
