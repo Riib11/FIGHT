@@ -5,12 +5,15 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.util.Vector;
 
 import com.ngse.fight.FIGHT;
 import com.ngse.fight.classes.Ability;
 import com.ngse.fight.classes.PassiveAbility;
 
 public class Hover extends PassiveAbility {
+
+	public static final double SPEED = 1;
 
 	public Hover() {
 		super("Hover", 1, "hov");
@@ -25,6 +28,13 @@ public class Hover extends PassiveAbility {
 	public void effect(Player user) {
 		// toggle hovering
 		togglePassiveAbility(user, this);
+		if (isActive(user)) {
+			user.setAllowFlight(true);
+			user.setFlying(true);
+		} else {
+			user.setAllowFlight(false);
+			user.setFlying(false);
+		}
 	}
 
 	@Override
@@ -36,26 +46,24 @@ public class Hover extends PassiveAbility {
 	public void passiveEffect(Player user) {
 		Player p = user;
 
-		if (p.hasMetadata(getName())) {
-			if (isActive(user)) {
-				if (isActive(user)) {
-					Location l = p.getLocation();
-					Location below = l.add(0, -1, 0);
+		// p.setVelocity(new Vector(p.getVelocity().getX() * 5, .5, p
+		// .getVelocity().getZ() * 5));
 
-					destroyHoveringBlock(user, false, this);
-
-					if (!below.getBlock().getType().isSolid()) {
-						p.sendMessage("Floating block created");
-						// if the block isnt solid, then set it to glass
-						below.getBlock().getState().update(true);
-						below.getBlock().setType(Material.GLASS);
-						below.getBlock().setMetadata(getName(),
-								new FixedMetadataValue(FIGHT.plugin, true));
-						below.getBlock().getState().update(true);
-					}
-				}
-			}
-		}
+		/*
+		 * if (p.hasMetadata(getName())) { if (isActive(user)) {
+		 * 
+		 * Location l = p.getLocation(); Location below = l.add(0, -1, 0);
+		 * 
+		 * destroyHoveringBlock(user, false, this);
+		 * 
+		 * if (!below.getBlock().getType().isSolid()) {
+		 * p.sendMessage("Floating block created"); // if the block isnt solid,
+		 * then set it to glass below.getBlock().getState().update(true);
+		 * below.getBlock().setType(Material.GLASS);
+		 * below.getBlock().setMetadata(getName(), new
+		 * FixedMetadataValue(FIGHT.plugin, true));
+		 * below.getBlock().getState().update(true); } } }
+		 */
 	}
 
 	public static void destroyHoveringBlock(Player p, boolean all, Ability a) {
@@ -89,6 +97,8 @@ public class Hover extends PassiveAbility {
 	@Override
 	public void endPassiveEffect(Player p) {
 		destroyHoveringBlock(p, true, this);
+		p.setFlying(false);
+		p.setAllowFlight(false);
 	}
 
 }

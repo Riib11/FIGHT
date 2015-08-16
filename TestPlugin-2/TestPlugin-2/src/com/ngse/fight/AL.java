@@ -25,7 +25,7 @@ public class AL implements ActionListener {
 				}
 
 				// do passive abilities
-				PassiveAbility.activatePassiveAbilities(p);
+				// PassiveAbility.activatePassiveAbilities(p);
 			}
 		}
 	}
