@@ -1,9 +1,0 @@
-package com.ngse.utilities;
-
-public class Time {
-
-	public static void wait(double seconds) {
-		Timer t = new Timer();
-	}
-
-}
