@@ -1,0 +1,12 @@
+package com.ngse.fight.classes.fighters;
+
+import com.ngse.fight.classes.FightClass;
+
+public class Ranger extends FightClass {
+
+	public Ranger(String name, int maxEnergy) {
+		super(name, maxEnergy);
+		// TODO Auto-generated constructor stub
+	}
+
+}

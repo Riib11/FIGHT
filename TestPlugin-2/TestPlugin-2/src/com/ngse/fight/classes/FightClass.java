@@ -17,6 +17,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.ngse.fight.classes.fighters.Lumberjack;
 import com.ngse.fight.classes.fighters.Ninja;
 import com.ngse.fight.classes.fighters.PsychoKiller;
+import com.ngse.fight.classes.fighters.Ranger;
 import com.ngse.fight.classes.mages.Alchemist;
 import com.ngse.fight.classes.mages.Illusionist;
 import com.ngse.fight.classes.mages.Necromancer;
@@ -39,6 +40,7 @@ public abstract class FightClass {
 		Lumberjack lum = new Lumberjack();
 		Illusionist ill = new Illusionist();
 		Necromancer nex = new Necromancer();
+		Ranger ran = new Ranger();
 	}
 
 	public abstract ArrayList<ItemStack> getItems();

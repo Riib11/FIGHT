@@ -1,0 +1,7 @@
+package com.ngse.fight.specials;
+
+public class SuperArrow {
+
+	public static final String metadataKey = null;
+
+}

@@ -1,0 +1,14 @@
+package com.ngse.fight.specials;
+
+import com.ngse.fight.classes.Ability;
+
+public class SuperArrow extends Ability {
+
+	public SuperArrow() {
+		super("Super Arrow", 20, 0, "suparr");
+		// TODO Auto-generated constructor stub
+	}
+
+	public static final String metadataKey = "superarrow";
+
+}

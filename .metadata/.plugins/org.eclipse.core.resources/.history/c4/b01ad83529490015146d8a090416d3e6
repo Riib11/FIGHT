@@ -1,0 +1,42 @@
+package com.ngse.fight.specials;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+
+import com.ngse.fight.classes.PassiveAbility;
+
+public class SuperArrow extends PassiveAbility {
+
+	public SuperArrow() {
+		super("Super Arrows", 0, "suparr");
+	}
+
+	public static final String metadataKey = "superarrow";
+
+	@Override
+	public void effect(Player user, Player target) {
+
+	}
+
+	@Override
+	public void effect(Player user) {
+
+	}
+
+	@Override
+	public ItemStack getItem() {
+		return setupItem(Material.BOW, this);
+	}
+
+	@Override
+	public void passiveEffect(Player p) {
+
+	}
+
+	@Override
+	public void endPassiveEffect(Player p) {
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.ngse.fight;
+
+import org.bukkit.event.Listener;
+
+public class ArrowListener implements Listener{
+	
+	public void onProjectileHit(Projectile projectile) {
+		
+	}
+
+}

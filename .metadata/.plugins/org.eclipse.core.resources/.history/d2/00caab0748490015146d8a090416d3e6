@@ -1,0 +1,9 @@
+package com.ngse.fight;
+
+public class ProjectileLaunchListener {
+	
+	public void onProjectileLaunch(Entity e) {
+		
+	}
+
+}

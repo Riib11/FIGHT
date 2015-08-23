@@ -1,0 +1,9 @@
+package com.ngse.fight;
+
+import org.bukkit.event.Listener;
+
+public class ArrowListener implements Listener{
+	
+	
+
+}

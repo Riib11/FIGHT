@@ -1,0 +1,19 @@
+package com.ngse.fight;
+
+import java.util.Collection;
+
+import org.bukkit.Location;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.Projectile;
+import org.bukkit.event.Listener;
+
+import com.ngse.fight.specials.SuperArrow;
+
+public class ArrowListener implements Listener {
+
+	public void onProjectileHit(Projectile projectile) {
+		if (projectile.hasMetadata(SuperArrow.metadataKey)) {
+		SuperArrow.arrowHit(projectile);
+		}
+	}
+}

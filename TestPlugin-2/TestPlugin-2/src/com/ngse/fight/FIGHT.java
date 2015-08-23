@@ -6,7 +6,6 @@ import javax.swing.Timer;
 
 import net.techcable.npclib.NPCLib;
 import net.techcable.npclib.NPCRegistry;
-import net.techcable.npclib.nms.NMSRegistry;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Player;
@@ -70,6 +69,7 @@ public class FIGHT extends JavaPlugin {
 		setupListener(new PlayerMovingListener());
 		setupListener(new PlayerAttackPlayerListener());
 		setupListener(new PlayerDeathListener());
+		setupListener(new ProjectileHitListener());
 	}
 
 	public static void initClasses() {

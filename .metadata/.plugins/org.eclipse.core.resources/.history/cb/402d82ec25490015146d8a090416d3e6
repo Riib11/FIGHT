@@ -1,0 +1,11 @@
+package com.ngse.fight.classes.fighters;
+
+import com.ngse.fight.classes.FightClass;
+
+public class Knight extends FightClass {
+
+	public Knight(String name, int maxEnergy) {
+		super(name, maxEnergy);
+	}
+
+}

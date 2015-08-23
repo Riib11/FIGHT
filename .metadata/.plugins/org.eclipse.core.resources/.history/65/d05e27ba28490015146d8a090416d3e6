@@ -1,0 +1,14 @@
+package com.ngse.fight.specials;
+
+import com.ngse.fight.classes.FightClass;
+
+public class SuperArrow extends FightClass {
+
+	public SuperArrow(String name, int maxEnergy) {
+		super(name, maxEnergy);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static final String metadataKey = "superarrow";
+
+}

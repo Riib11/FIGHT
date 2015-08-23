@@ -1,0 +1,25 @@
+package com.ngse.fight;
+
+import org.bukkit.entity.Player;
+import org.bukkit.entity.Projectile;
+import org.bukkit.event.Listener;
+
+import com.ngse.fight.specials.SuperArrow;
+import com.ngse.utilities.Toggle;
+
+public class ProjectileHitListener implements Listener {
+
+	public void onProjectileHit(Projectile projectile) {
+
+		if (projectile.getShooter() instanceof Player) {
+			Player p = ((Player) projectile.getShooter());
+			p.sendMessage("Hitting projectile, super arrow:"
+					+ Toggle.fromMeta(p, SuperArrow.metadataKey));
+			if (Toggle.fromMeta(p, SuperArrow.metadataKey).b) {
+				((Player) projectile.getShooter())
+						.sendMessage("Shooting super arrow");
+				SuperArrow.arrowHit(projectile);
+			}
+		}
+	}
+}

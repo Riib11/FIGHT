@@ -1,0 +1,15 @@
+package com.ngse.fight;
+
+import org.bukkit.entity.Projectile;
+import org.bukkit.event.Listener;
+
+import com.ngse.fight.specials.SuperArrow;
+
+public class ArrowListener implements Listener {
+
+	public void onProjectileHit(Projectile projectile) {
+		if (projectile.hasMetadata(SuperArrow.metadataKey) && ( (Toggle) projectile.getMetadata(SuperArrow.metadataKey).get(0).value()).b) {s
+
+		}
+	}
+}

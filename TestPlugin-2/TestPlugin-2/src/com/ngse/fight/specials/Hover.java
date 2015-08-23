@@ -4,8 +4,6 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.metadata.FixedMetadataValue;
-import org.bukkit.util.Vector;
 
 import com.ngse.fight.FIGHT;
 import com.ngse.fight.classes.Ability;
@@ -16,7 +14,7 @@ public class Hover extends PassiveAbility {
 	public static final double SPEED = 1;
 
 	public Hover() {
-		super("Hover", 1, "hov");
+		super("Hover", 3, "hov");
 	}
 
 	@Override
@@ -96,7 +94,7 @@ public class Hover extends PassiveAbility {
 
 	@Override
 	public void endPassiveEffect(Player p) {
-		destroyHoveringBlock(p, true, this);
+		// destroyHoveringBlock(p, true, this);
 		p.setFlying(false);
 		p.setAllowFlight(false);
 	}

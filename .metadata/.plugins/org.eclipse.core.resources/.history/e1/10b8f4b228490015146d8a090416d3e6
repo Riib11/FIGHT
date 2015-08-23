@@ -1,0 +1,9 @@
+package com.ngse.fight.specials;
+
+import com.ngse.fight.classes.FightClass;
+
+public class SuperArrow extends FightClass{
+
+	public static final String metadataKey = "superarrow";
+
+}
